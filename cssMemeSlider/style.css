@@ -89,3 +89,35 @@ body {
 #slide4:checked ~ .wrapper > .slider-block > .slider-block__image > .image:nth-child(4) {
   width: 100%;
 }
+
+/*** slider text ***/
+.slider-text {
+  max-width: 70%;
+  order: 1;
+  overflow: hidden;
+}
+.slider-block__texts {
+  display: flex;
+  justify-content: flex-start;
+}
+.text {
+  max-width: 100%;
+  width: 0%;
+  overflow: hidden;
+  font-size: 2rem;
+  margin: 0%;
+  color: #fff;
+  transition: 1s;
+}
+#slide1:checked ~ .wrapper > .slider-text > .slider-block__texts > .text:nth-child(1) {
+  width: 100%;
+}
+#slide2:checked ~ .wrapper > .slider-text > .slider-block__texts > .text:nth-child(2) {
+  width: 100%;
+}
+#slide3:checked ~ .wrapper > .slider-text > .slider-block__texts > .text:nth-child(3) {
+  width: 100%;
+}
+#slide4:checked ~ .wrapper > .slider-text > .slider-block__texts > .text:nth-child(4) {
+  width: 100%;
+}
