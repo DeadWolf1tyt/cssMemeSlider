@@ -57,3 +57,35 @@ body {
   border: 0.2rem solid rgb(202, 202, 246);
   background-color: rgba(69, 69, 235, 0);
 }
+
+/*** slider images ***/
+.slider-block {
+  width: 100%;
+}
+.slider-block__image {
+  display: flex;
+  justify-content: flex-start;
+  width: 40rem;
+  overflow: hidden;
+  border: 1px solid black;
+  margin: 0% auto;
+}
+.image {
+  display: block;
+  width: 0%;
+  height: 30rem;
+  overflow: hidden;
+  transition: 1s;
+}
+#slide1:checked ~ .wrapper > .slider-block > .slider-block__image > .image:nth-child(1) {
+  width: 100%;
+}
+#slide2:checked ~ .wrapper > .slider-block > .slider-block__image > .image:nth-child(2) {
+  width: 100%;
+}
+#slide3:checked ~ .wrapper > .slider-block > .slider-block__image > .image:nth-child(3) {
+  width: 100%;
+}
+#slide4:checked ~ .wrapper > .slider-block > .slider-block__image > .image:nth-child(4) {
+  width: 100%;
+}
